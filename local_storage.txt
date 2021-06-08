@@ -1,0 +1,26 @@
+
+-------------------------------------
+
+localStorage.setItem('myKey', 'myValue');
+
+let localValue = localStorage.getItem('myKey');
+console.log(localValue);
+
+localStorage.removeItem('myKey');
+localStorage.clear();  
+
+
+=====================================
+
+Запулить в локал
+
+cartFormData_serial = JSON.stringify(cartFormData);
+localStorage.setItem('cartFormData', cartFormData_serial);
+
+--------------------------------------
+
+Вытащить из локал
+
+if(localStorage.getItem('cartFormData') !== null){
+	cartFormData = JSON.parse(localStorage.getItem('cartFormData'));
+} 
